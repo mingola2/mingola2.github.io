@@ -1,0 +1,145 @@
+
+/* grid*/
+.container{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12);
+    grid-template-rows:auto;
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    "h h h h h h h h h h h h"
+    "w w w w w w e e e e e e"
+    "w w w w w w e e e e e e"
+    "p p p p p p k k k k k k"
+    "p p p p p p k k k k k k"
+    "f f f f f f f f f f f f"
+}
+
+.header{
+    grid-area: h;
+    font-size: 25px;
+
+}
+
+.programs{
+    grid-area: p;
+    color: black
+}
+
+.skills{
+    grid-area: k;
+    color: black
+}
+
+.workexperience{
+    grid-area: w;
+    color: black
+}
+
+.education{
+    grid-area: e;
+    color: black
+}
+
+.footer{
+    grid-area: f;
+    color: black
+}
+
+body {
+    background-color:#D3D3D3;
+  }
+  
+  @media screen and (min-width: 400px) {
+    body {
+      background-color:#D3D3D3;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+  body {
+      background-color:#D3D3D3;
+  } 
+/* small screen grid*/
+    .container{
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "h"
+        "w"
+        "e"
+        "p"
+        "k"
+        "f";
+    }
+}
+
+h1{
+    font-family: 'raleway', bold;
+    font-size: 90px;
+    color: rgb(84, 8, 8);
+}
+
+h2{
+    font-family: 'Roboto', bold;
+    font-size: 40px;
+    color: rgb(84, 8, 8);
+}
+
+h3{
+    font-family: 'Roboto', bold;
+    font-size: 30px;
+    color: rgb(84, 8, 8);
+}
+
+li{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+/* animation*/
+#iris {
+
+	left:40%;
+	fill:rgba(138, 30, 138, 0.404);
+	-webkit-animation:color 10s linear infinite;
+	animation:color 10s linear infinite;
+}
+
+@keyframes color {
+	0% {
+		fill: black;
+	}
+	
+	30% {
+		fill: rgb(66, 4, 58);
+	}
+	50% {
+		fill: rgb(93, 8, 8);
+	}
+	 60% {
+		fill: rgb(93, 8, 8);
+		}
+	70% {
+		fill:  rgb(93, 8, 8);
+	}
+	85% {
+    fill:  rgb(66, 4, 58);
+	}
+	100% {
+		fill: black;
+	}
+	
+}
+
+.dope{
+    opacity:0;
+    }
+
+.dope:hover {
+    opacity: 1.0;
+}

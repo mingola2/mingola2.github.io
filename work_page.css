@@ -1,0 +1,119 @@
+#iris {
+
+	left:40%;
+	fill:rgba(138, 30, 138, 0.404);
+	-webkit-animation:color 10s linear infinite;
+	animation:color 10s linear infinite;
+}
+
+@keyframes color{
+	0% {
+		fill: black;
+	}
+	
+	30% {
+		fill: rgb(66, 4, 58);
+	}
+	50% {
+		fill: rgb(93, 8, 8);
+	}
+	 60% {
+		fill: rgb(93, 8, 8);
+		}
+	70% {
+		fill:  rgb(93, 8, 8);
+	}
+	85% {
+    fill:  rgb(66, 4, 58);
+	}
+	100% {
+		fill: black;
+	}
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-template-rows: 100px 800px auto auto
+	grid-gap: 3;
+	grid-template-areas:
+	" h h h h h h h h h h h m"
+	" c c c c c c c c c c c m"
+	" a a a a a a a a a a a m"
+	" f f f f f f f f f f f m"
+	" s s s s s s s s s s s m"
+}
+
+.sidenav {
+	grid-area: m;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	color: #60202f
+  }
+
+  ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	}
+  
+  li {
+	float: left;
+  }
+  
+  li a {
+	display: block;
+	color: whitesmoke;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+	background-color: rgb(79, 19, 19);
+  }
+
+  /* The sidebar menu */
+.sidenav {
+	height: 100%; /* Full-height: remove this if you want "auto" height */
+	width: 160px; /* Set the width of the sidebar */
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	right: 0;
+	background-color: transparent;
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 20px;
+  }
+
+  /* The navigation menu links */
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 35px;
+	color: #625764;
+	display: block;
+  }
+
+  /* Style page content */
+.main {
+	margin-left: 160px; /* Same as the width of the sidebar */
+	padding: 0px 10px;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	color: #f1f1f1;
+  }
+
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+
+ 
